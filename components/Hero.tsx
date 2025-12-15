@@ -4,7 +4,7 @@ import { Clock, CalendarCheck, ShieldCheck, Home } from 'lucide-react';
 export const Hero: React.FC = () => {
   return (
     <div id="home" className="relative bg-gradient-to-br from-brand-50 via-white to-gray-100 overflow-hidden">
-      {/* Decorative background elements since image is removed */}
+      {/* Decorative background elements */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-brand-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
@@ -29,7 +29,8 @@ export const Hero: React.FC = () => {
         </h1>
         
         <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Layanan fisioterapi khusus yang menangani keluhan syaraf, otot, pernapasan, hingga tumbuh kembang bayi dengan pendekatan yang aman dan nyaman.
+          Layanan fisioterapi khusus yang menangani keluhan syaraf, otot, pernapasan, hingga tumbuh kembang bayi. <br className="hidden sm:block"/>
+          <span className="font-semibold text-brand-700 mt-2 inline-block">Melayani Home Visit (Fisioterapi ke Rumah).</span>
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
